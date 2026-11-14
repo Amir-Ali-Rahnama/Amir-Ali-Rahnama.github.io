@@ -1,1 +1,354 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="وب‌سایت شخصی امیرعلی رهنما، دانشجوی مهندسی مکانیک و فعال در حوزه رباتیک و مکاترونیک">
+  <title>Amir Ali Rahnama | Robotics & Mechatronics</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0b1120;
+      color: #e5eaf3;
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.9;
+    }
+
+    :root {
+      --blue: #38bdf8;
+      --card: #131e31;
+      --muted: #9baac0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #0b1120ee;
+      border-bottom: 1px solid #24334b;
+      backdrop-filter: blur(12px);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px 0;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      min-height: 510px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 90px 0;
+    }
+
+    .tag {
+      color: var(--blue);
+      border: 1px solid #28516c;
+      padding: 5px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 55px);
+      margin: 25px 0 10px;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 23px;
+      background: var(--blue);
+      color: #07111e;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--blue);
+      border: 1px solid var(--blue);
+    }
+
+    section {
+      padding: 65px 0;
+      scroll-margin-top: 85px;
+    }
+
+    .section-title {
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+
+    .section-title span {
+      color: var(--blue);
+    }
+
+    .about {
+      color: var(--muted);
+      max-width: 850px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #26364e;
+      border-radius: 13px;
+      padding: 23px;
+      transition: .25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--blue);
+    }
+
+    .card h3 {
+      color: var(--blue);
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: var(--card);
+      border: 1px solid #28516c;
+      border-radius: 8px;
+      padding: 8px 17px;
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #26364e;
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media(max-width: 600px) {
+      .nav-links {
+        gap: 12px;
+        font-size: 12px;
+      }
+      .hero {
+        min-height: 420px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">AMIR ALI RAHNAMA</div>
+      <div class="nav-links">
+        <a href="#home">خانه</a>
+        <a href="#about">درباره من</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#achievements">دستاوردها</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#contact">ارتباط</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="hero" id="home">
+      <span class="tag">Mechanical Engineering | Robotics | Mechatronics</span>
+
+      <h1>سلام، من <span>امیرعلی رهنما</span> هستم.</h1>
+
+      <p>
+        دانشجوی مهندسی مکانیک دانشگاه علم و صنعت ایران،
+        علاقه‌مند به رباتیک، مکاترونیک، طراحی و توسعه
+        سیستم‌های هوشمند و فناوری‌های نوین.
+      </p>
+
+      <div>
+        <a class="btn" href="#projects">مشاهده پروژه‌ها</a>
+        <a class="btn btn-outline" href="#about">درباره من</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title"><span>01.</span> درباره من</h2>
+
+      <p class="about">
+        من امیرعلی رهنما، دانشجوی مهندسی مکانیک در دانشگاه
+        علم و صنعت ایران هستم. تمرکز فعالیت‌های من بر
+        حوزه‌های رباتیک، مکاترونیک، طراحی سیستم‌های مکانیکی
+        و توسعه راهکارهای مهندسی است.
+        در این وب‌سایت، پروژه‌ها، تجربیات علمی،
+        فعالیت‌های تیمی و دستاوردهای خودم را به اشتراک
+        می‌گذارم.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title"><span>02.</span> پروژه‌های من</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>🤖 پروژه رباتیک ۱</h3>
+          <p>
+            توضیح کوتاهی درباره پروژه، هدف طراحی،
+            فناوری‌های استفاده‌شده و نقش من در آن.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>⚙️ پروژه مکاترونیک ۲</h3>
+          <p>
+            توضیح کوتاهی درباره سیستم مکانیکی،
+            الکترونیکی و بخش کنترلی پروژه.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🦾 پروژه رباتیک ۳</h3>
+          <p>
+            توضیح درباره ایده، مراحل توسعه،
+            چالش‌ها و نتایج پروژه.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2 class="section-title"><span>03.</span> افتخارات و دستاوردها</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>🏆 افتخار اول</h3>
+          <p>نام مسابقه، رتبه کسب‌شده و سال برگزاری.</p>
+        </div>
+
+        <div class="card">
+          <h3>🥇 افتخار دوم</h3>
+          <p>عنوان دستاورد، توضیحات و جزئیات مربوطه.</p>
+        </div>
+
+        <div class="card">
+          <h3>📜 گواهینامه‌ها</h3>
+          <p>دوره‌ها، مدارک تخصصی و فعالیت‌های علمی.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title"><span>04.</span> مهارت‌ها و تخصص‌ها</h2>
+
+      <div class="skills">
+        <span class="skill">Robotics</span>
+        <span class="skill">Mechatronics</span>
+        <span class="skill">Mechanical Design</span>
+        <span class="skill">CAD</span>
+        <span class="skill">Electronics</span>
+        <span class="skill">Control Systems</span>
+        <span class="skill">Programming</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title"><span>05.</span> ارتباط با من</h2>
+
+      <div class="card">
+        <p>
+          برای ارتباط علمی، همکاری در پروژه‌ها
+          و فعالیت‌های مهندسی می‌توانید از راه‌های
+          ارتباطی زیر استفاده کنید.
+        </p>
+        <br>
+        <a class="btn btn-outline"
+           href="https://github.com/Amir-Ali-Rahnama">
+           GitHub
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Amir Ali Rahnama | Robotics & Mechatronics
+</footer>
+
+</body>
+</html>
+
